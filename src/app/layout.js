@@ -1,6 +1,6 @@
 import { Grommet, Main, SkipLink, SkipLinks } from 'grommet';
 import { hpe } from '@/theme/hpe';
-import { AppFooter, AppHeader, AppLayout } from '@/components';
+import { AppLayout } from '@/components';
 
 const APP_TITLE = 'My Application Name';
 
