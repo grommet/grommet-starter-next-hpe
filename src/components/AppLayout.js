@@ -1,12 +1,12 @@
 'use client';
 
-import { use, useEffect, useState } from 'react';
-import { Grommet, Box, Main, SkipLink, SkipLinks } from 'grommet';
+import { useEffect, useState } from 'react';
+import { Grommet, Main, SkipLink, SkipLinks } from 'grommet';
 import { hpe } from '@/theme/hpe';
 import { AppFooter, AppHeader } from '@/components';
 
 export const AppLayout = ({ children, name }) => {
-  const [themeMode, setThemeMode] = useState('auto');
+  const [themeMode, setThemeMode] = useState('light');
   const [animate, setAnimate] = useState(false);
 
   const DURATION = 700;

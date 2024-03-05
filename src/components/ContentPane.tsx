@@ -32,7 +32,7 @@ export const ContentPane = ({
         {actions}
       </Header>
       <Box
-        skeleton={skeleton ? skeletonAnimation : undefined}
+        // skeleton={skeleton ? skeletonAnimation : undefined}
       >
       {children}
       </Box>
