@@ -11,7 +11,7 @@
   "dependencies": {
     "grommet": "^2.46.0",
     "grommet-icons": "^4.12.4",
-    "grommet-theme-hpe": "^5.8.0",
+    "grommet-theme-hpe": "^6.0.1",
     "next": "14.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
