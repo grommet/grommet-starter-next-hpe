@@ -32,6 +32,12 @@ export const AppLayout = ({ children, name }: {
       themeMode={themeMode}
       full="min"
       background="background-back"
+      options={{
+        box: {
+          cssGap: true
+        }
+      }
+      }
       style={{ display: 'flex', flexDirection: 'column' }}
     >
       <SkipLinks>

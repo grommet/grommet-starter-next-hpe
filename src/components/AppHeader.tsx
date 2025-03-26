@@ -27,7 +27,6 @@ export const AppHeader = ({ name, themeMode: themeModeProp, ...rest }: {
           </Text>
         </Button>
       </Link>
-      < Box flex />
       <Nav direction="row" gap="small" >
         <Link href="/pages" passHref legacyBehavior >
           <Button label="Pages" />
@@ -36,7 +35,6 @@ export const AppHeader = ({ name, themeMode: themeModeProp, ...rest }: {
           <Button label="Templates" />
         </Link>
       </Nav>
-      < Box flex />
       <ButtonGroup>
         <Button
           icon={themeMode === 'dark' ? <Moon /> : <Sun />}
