@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "src/app/page.js",
     "src/app/layout.js",
-    "src/components/AppHeader.js",
+    "src/components/AppHeader.ts",
     "src/components/index.js",
     "src/theme/hpe.js"
   ],

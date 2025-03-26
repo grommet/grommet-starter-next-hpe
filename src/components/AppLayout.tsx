@@ -2,17 +2,21 @@
 
 import { useEffect, useState } from 'react';
 import { Grommet, Main, SkipLink, SkipLinks } from 'grommet';
+import { AnimationType } from 'grommet/utils';
 import { hpe } from 'grommet-theme-hpe';
 import { AppFooter, AppHeader } from '@/components';
 
-export const AppLayout = ({ children, name }) => {
-  const [themeMode, setThemeMode] = useState('auto');
+export const AppLayout = ({ children, name }: {
+  children: React.ReactNode,
+  name: string
+}) => {
+  const [themeMode, setThemeMode] = useState<'auto' | 'dark' | 'light' | undefined>('auto');
   const [animate, setAnimate] = useState(false);
 
   const DURATION = 700;
-  const modeTransition = ({ delay }) => [
+  const modeTransition = ({ delay }: { delay: number }) => [
     { type: 'fadeIn', delay: delay, duration: DURATION },
-  ];
+  ] as AnimationType;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,9 +41,9 @@ export const AppLayout = ({ children, name }) => {
       <AppHeader
         name={name}
         themeMode={{ themeMode, setThemeMode }}
-        animation={animate && modeTransition({ delay: 0 })}
+        {...(animate && { animation: modeTransition({ delay: 0 }) })}
       />
-      <Main id="main" animation={animate && modeTransition({ delay: 300 })}>
+      <Main id="main" animation={animate ? modeTransition({ delay: 300 }) : undefined}>
         {children}
       </Main>
       <AppFooter id="footer" />

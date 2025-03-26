@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "grommet": "^2.35.0",
-    "grommet-icons": "^4.12.1",
-    "grommet-theme-hpe": "^5.2.0",
+    "grommet": "^2.46.0",
+    "grommet-icons": "^4.12.4",
+    "grommet-theme-hpe": "^5.8.0",
     "next": "14.1.1",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/node": "^20.17.27",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.1.1",
-    "typescript": "^5"
+    "typescript": "^5.8.2"
   }
 }
