@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Avatar, Box, Button, Header, Nav, Text, BoxProps } from 'grommet';
+import { usePathname } from 'next/navigation';
+import { Avatar, Button, Header, Nav, Text, BoxProps } from 'grommet';
 import { ButtonGroup } from '@/components';
 import { Moon, Sun } from '@/icons';
 
@@ -11,6 +12,7 @@ export const AppHeader = ({ name, themeMode: themeModeProp, ...rest }: {
   } & BoxProps;
 }) => {
   const { themeMode, setThemeMode } = themeModeProp;
+  const pathname = usePathname();
 
   return (
     <Header
@@ -29,10 +31,10 @@ export const AppHeader = ({ name, themeMode: themeModeProp, ...rest }: {
       </Link>
       <Nav direction="row" gap="small" >
         <Link href="/pages" passHref legacyBehavior >
-          <Button label="Pages" />
+          <Button label="Pages" active={pathname === '/pages'} />
         </Link>
         < Link href="/templates" passHref legacyBehavior >
-          <Button label="Templates" />
+          <Button label="Templates" active={pathname === '/templates'} />
         </Link>
       </Nav>
       <ButtonGroup>
