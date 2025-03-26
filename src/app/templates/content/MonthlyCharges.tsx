@@ -1,4 +1,4 @@
-import { Box, DataChart, Skeleton, Text, DataChartProps } from 'grommet';
+import { Box, DataChart, Skeleton, Text, DataChartProps, BoxProps } from 'grommet';
 import { AnalyticCard } from '@/components';
 
 import expenses from '@/mockData/expenses.json';
@@ -43,14 +43,11 @@ const chartProps = [
   },
 ] as DataChartProps['chart'];
 
-export const MonthlyCharges = (
-  { animation, skeleton, ...rest }:
-    { animation: AnimationType, skeleton: boolean }
-) => {
+export const MonthlyCharges = ({ skeleton, ...rest }: { skeleton: boolean } & BoxProps) => {
   return (
-    <AnalyticCard title="Monthly charges" level={2} animation={animation} {...rest}>
+    <AnalyticCard title="Monthly charges" level={2} {...rest}>
       <Box height={{ min: 'small', max: 'medium' }} direction="row">
-        {skeleton ? <Skeleton height={{ min: 'small', max: 'medium' }} /> :
+        {skeleton ? <Skeleton height={{ min: 'small', max: 'medium' }} width="medium" /> :
           <DataChart
             data={expenses}
             series={series}

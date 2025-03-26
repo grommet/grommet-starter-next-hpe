@@ -26,7 +26,7 @@ const Templates = () => {
       <Heading level={2}>Tables</Heading>
       <Heading level={2}>Forms</Heading>
       <ContentPane heading="Cards" level={2} skeleton={skeleton}>
-        <MonthlyCharges animation={cardAnimation(0)} skeleton={skeleton} />
+        <MonthlyCharges animation={cardAnimation(0)} skeleton={skeleton} alignSelf="start" />
       </ContentPane>
       <Heading level={2}>Charts</Heading>
     </>
