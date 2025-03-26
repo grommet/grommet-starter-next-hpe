@@ -1,5 +1,4 @@
 import { BoxProps, Card, CardBody, CardFooter, CardHeader, Heading } from 'grommet';
-import { AnimationType } from 'grommet/utils';
 import { LinkNext } from 'grommet-icons';
 
 export const AnalyticCard = (

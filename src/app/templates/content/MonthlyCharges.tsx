@@ -2,7 +2,6 @@ import { Box, DataChart, Skeleton, Text, DataChartProps, BoxProps } from 'gromme
 import { AnalyticCard } from '@/components';
 
 import expenses from '@/mockData/expenses.json';
-import { AnimationType } from 'grommet/utils';
 
 const series = [
   {
