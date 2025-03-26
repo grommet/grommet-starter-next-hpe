@@ -14,7 +14,7 @@ export default function Home() {
             actions={<Button icon={<Next />} />}
             contain
           >
-            <Text>Home</Text>
+            <Text>Content pane</Text>
           </ContentPane>
           <ContentPane
             heading="Secondary content"
@@ -22,7 +22,7 @@ export default function Home() {
             actions={<Button icon={<Next />} />}
             contain
           >
-            <Text>Home</Text>
+            <Text>Content pane</Text>
           </ContentPane>
         </Grid>
       </PageContent>

@@ -1,3 +1,4 @@
+export * from './AnalyticCard.tsx';
 export * from './AppFooter';
 export * from './AppHeader';
 export * from './AppLayout';

@@ -9,11 +9,11 @@ dependencies:
     specifier: ^2.35.0
     version: 2.35.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
   grommet-icons:
-    specifier: ^4.12.0
-    version: 4.12.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
+    specifier: ^4.12.1
+    version: 4.12.1(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
   grommet-theme-hpe:
     specifier: ^5.2.0
-    version: 5.2.0(grommet-icons@4.12.0)(grommet@2.35.0)(react@18.2.0)(styled-components@5.3.11)
+    version: 5.2.0(grommet-icons@4.12.1)(grommet@2.35.0)(react@18.2.0)(styled-components@5.3.11)
   next:
     specifier: 14.1.1
     version: 14.1.1(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
@@ -1674,8 +1674,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /grommet-icons@4.12.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11):
-    resolution: {integrity: sha512-aPFVjdCBLbaUOpxzrNakxYz6DNYxS5lJeLP4tI6nZFfOzLhWH5LBf+tfkL/ZkLMNZC1Uqsw9awPvyvT03xLOsA==}
+  /grommet-icons@4.12.1(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11):
+    resolution: {integrity: sha512-LhOP6BkDAGiSNcUOfsGGRo+AKD6zWOXeNeusY1WYvKplAR6mKCAQfH7Nig2Buc/v5zadKSko2NDtCQqwJaME0Q==}
     peerDependencies:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
@@ -1686,7 +1686,7 @@ packages:
       styled-components: 5.3.11(@babel/core@7.24.0)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
     dev: false
 
-  /grommet-theme-hpe@5.2.0(grommet-icons@4.12.0)(grommet@2.35.0)(react@18.2.0)(styled-components@5.3.11):
+  /grommet-theme-hpe@5.2.0(grommet-icons@4.12.1)(grommet@2.35.0)(react@18.2.0)(styled-components@5.3.11):
     resolution: {integrity: sha512-x/OD+3rxGAfUh9CE4tDCF7zx2vYSyIf/AsIVEA/JnXt+UflLnugl6bCoxpZvbfZct/HovikxiCJcJYTmCPiskQ==}
     peerDependencies:
       grommet: ^2.35.0
@@ -1695,7 +1695,7 @@ packages:
       styled-components: ^5.0.0
     dependencies:
       grommet: 2.35.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
-      grommet-icons: 4.12.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
+      grommet-icons: 4.12.1(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
       react: 18.2.0
       styled-components: 5.3.11(@babel/core@7.24.0)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
     dev: false
@@ -1708,7 +1708,7 @@ packages:
       react-dom: ^16.6.1 || ^17.0.0 || ^18.0.0
       styled-components: ^5.1.0
     dependencies:
-      grommet-icons: 4.12.0(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
+      grommet-icons: 4.12.1(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
       hoist-non-react-statics: 3.3.2
       markdown-to-jsx: 7.4.1(react@18.2.0)
       prop-types: 15.8.1

@@ -12,17 +12,17 @@ export const ContentPane = ({
   skeleton,
   ...rest
 }: {
-  actions: React.ReactNode;
+  actions?: React.ReactNode;
   children: React.ReactNode;
-  contain: boolean;
+  contain?: boolean;
   heading: string;
   level: 1 | 2 | 3 | 4 | 5 | 6;
-  skeleton: boolean;
+  skeleton?: boolean;
 }) => {
   return (
-    <Box 
-      background={contain ? 'background-front' : undefined} 
-      gap="medium" 
+    <Box
+      background={contain ? 'background-front' : undefined}
+      gap="medium"
       pad={contain ? { horizontal: 'medium', vertical: 'medium' } : undefined}
       round={contain}
       {...rest}
@@ -32,9 +32,9 @@ export const ContentPane = ({
         {actions}
       </Header>
       <Box
-        // skeleton={skeleton ? skeletonAnimation : undefined}
+        skeleton={skeleton ? skeletonAnimation : undefined}
       >
-      {children}
+        {children}
       </Box>
     </Box>
   );

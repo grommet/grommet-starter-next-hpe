@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Avatar, Box, Button, Header, Nav, Text } from 'grommet';
 import { ButtonGroup } from '@/components';
 import { Moon, Sun } from '@/icons';
@@ -12,14 +13,21 @@ export const AppHeader = ({ name, themeMode: themeModeProp, ...rest }) => {
       sticky="scrollup"
       {...rest}
     >
-      <Text color="text-strong">
-        <Text weight="bold">HPE</Text> {name}
-      </Text>
+      <Link href="/" passHref legacyBehavior>
+        <Button>
+          <Text color="text-strong">
+            <Text weight="bold">HPE</Text> {name}
+          </Text>
+        </Button>
+      </Link>
       <Box flex />
       <Nav direction="row" gap="small">
-        <Button label="Home" href="/" />
-        <Button label="About" href="/about" />
-        <Button label="Contact" href="/contact" />
+        <Link href="/pages" passHref legacyBehavior>
+          <Button label="Pages" />
+        </Link>
+        <Link href="/templates" passHref legacyBehavior>
+          <Button label="Templates" />
+        </Link>
       </Nav>
       <Box flex />
       <ButtonGroup>
